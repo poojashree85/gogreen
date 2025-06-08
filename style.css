@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: #2e7d32; /* Green navbar */
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+
+.top-contact-bar {
+  background-color: white;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-family: sans-serif;
+}
+
+.top-contact-bar a {
+  color: green;
+  text-decoration: none;
+}
+
+.top-contact-bar a:hover {
+  text-decoration: underline;
+}
+
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffa500;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://images.unsplash.com/photo-1604476428137-11cdbf3f9b9a') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background: #ffa500;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ff7f00;
+}
+
+.section {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #014d40;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: #f0f0f0;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background: #e6fff0;
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+  color: #00704A;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input, form textarea {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form button {
+  background: #014d40;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #01675b;
+}
+
+/* Footer */
+.footer {
+  background-color: #2e7d32; /* dark green */
+  color: #e0f2f1; /* light teal */
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-social {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  border-bottom: 3px solid #a5d6a7;
+  padding-bottom: 8px;
+}
+
+.footer-about p,
+.footer-contact p {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #e0f2f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #a5d6a7;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  background-color: #81c784; /* lighter green */
+  color: #2e7d32;
+  font-weight: 700;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+.social-icon:hover {
+  background-color: #a5d6a7;
+  color: #1b5e20;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #b2dfdb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+
+/* Base setup omitted for brevity, assuming earlier style.css is loaded */
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.testimonial-cards .card {
+  background-color: #fff5e6;
+  border-left: 5px solid #ffa500;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.map-container {
+  margin-top: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 2rem;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  text-decoration: none;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+}
+
+/* Services section */
+.services-section {
+  padding: 4rem 0;
+  background: #e8f5e9;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2e7d32;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+  color: #388e3c;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+}
+
+/* Why Choose Us Section */
+/* Why Choose Us Section - updated with image */
+
+#why-choose-us {
+  text-align: center;            /* Center the heading */
+  margin-bottom: 50px;
+}
+
+#why-choose-us h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #2e7d32;
+}
+
+.why-content {
+  display: flex;
+  justify-content: center;       /* Center the flex content */
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;                 /* Center the container itself */
+  flex-wrap: wrap;               /* Stack on small screens */
+}
+
+.reasons-list {
+  list-style: none;
+  padding-left: 0;
+  flex: 1;
+  text-align: left;              /* Keep bullet points left-aligned */
+  min-width: 300px;
+}
+
+.reasons-list li {
+  background: #dcedc8;
+  margin-bottom: 12px;
+  padding: 12px 18px;
+  border-left: 5px solid #2e7d32;
+  font-weight: 600;
+  color: #33691e;
+  border-radius: 5px;
+}
+
+.why-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.why-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(46,125,50,0.3);
+  object-fit: cover;
+  max-height: 350px;
+}
+
+/* Optional: Better layout for small screens */
+@media (max-width: 768px) {
+  .why-content {
+    flex-direction: column;
+  }
+
+  .reasons-list,
+  .why-image {
+    text-align: center;
+  }
+
+  .reasons-list li {
+    text-align: left;
+  }
+}
+
+
+/* Slider Styles */
+#slider {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: calc(100% * 4); /* 4 slides */
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(46, 125, 50, 0.6);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+button.prev:hover, button.next:hover {
+  background-color: #2e7d32;
+}
+
+button.prev {
+  left: 15px;
+}
+
+button.next {
+  right: 15px;
+}
+
+
+
+
+
